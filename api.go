@@ -13,7 +13,7 @@ func main() {
 }
 
 func Call(uri string) {
-	req, err := http.NewRequest("PUT", fmt.Sprintf("https://0.0.0.0/api/v2/cuckold/call/%s", uri), nil)
+	req, err := http.NewRequest("GET", fmt.Sprintf("https://0.0.0.0/api/v2/cuckold/call/%s", uri), nil)
 
 	if err != nil {
 		return
